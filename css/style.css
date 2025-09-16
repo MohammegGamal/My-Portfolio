@@ -1,0 +1,325 @@
+:root {
+    scroll-behavior: smooth;
+    --main-color: #00c7e1;
+}
+
+body {
+    margin: 0;
+    background-image: url(../images/hero.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bg-main {
+    background-color: var(--main-color);
+}
+
+.text-main {
+    color: var(--main-color);
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    background: rgba(255, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .4);
+    transition: .3s;
+}
+
+.navbar:hover {
+    transform: translatex(-150px);
+    background: rgba(255, 255, 255, .2);
+    border: 2px solid rgba(255, 255, 255, .7);
+}
+
+.navbar {
+    top: 10px;
+    width: 300px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar .nav-icon {
+    color: white;
+    font-size: 25px;
+    margin: 0;
+    transition: .3s;
+}
+
+.navbar .nav-icon:hover {
+    transform: translateY(-2px);
+    color: var(--main-color);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 25px;
+}
+
+.typing::after {
+    display: inline-block;
+    content: "";
+    animation-name: typin-an;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes typin-an {
+
+    0% {
+        content: "|";
+    }
+
+    9% {
+        content: " |";
+    }
+
+    19% {
+        content: "D|";
+    }
+
+    29% {
+        content: "Dev|";
+    }
+
+    39% {
+        content: "Deve|";
+    }
+
+    49% {
+        content: "Devel|";
+    }
+
+    59% {
+        content: "Develo|";
+    }
+
+    69% {
+        content: "Develop|";
+    }
+
+    79% {
+        content: "Develope|";
+    }
+
+    89% {
+        content: "Developer|";
+    }
+
+    100% {
+        content: "Developer.|";
+    }
+
+}
+
+
+.main-btn {
+    border: 3px solid var(--main-color);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--main-color);
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: .3s;
+    margin: 5px;
+}
+
+.main-btn:hover {
+    transform: scale(1.02) translateY(-5px);
+
+    color: white;
+    background-color: var(--main-color);
+}
+
+/* .gradient
+{
+    background-color: linear-gradient(to right,var(--main-color), white );
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 2s ease-in-out 0s infinite none running;
+}
+
+@keyframes gradient-animation{
+    0%{background-position: 0% center;}
+    0%{background-position: 100% center;}
+} */
+.bg-blur {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(255, 255, 255, .4);
+    transition: .3s;
+}
+
+.bg-blur:hover {
+    transform: translateY(-3px);
+    box-shadow: #00c7e1 1px 1px 8px;
+    background: rgba(255, 255, 255, .2);
+    border: 1px solid rgba(255, 255, 255, .7);
+
+}
+
+.bg-skills {
+    background: rgba(255, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .4);
+    transition: .3s;
+}
+
+.about-prgph {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.my-img {
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: .5s;
+}
+
+.my-img:hover {
+    transform: translateY(-3px);
+    box-shadow: #00c7e1 1px 1px 8px;
+
+}
+
+.sec-head {
+    color: var(--main-color);
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.carousel-indicators [data-bs-target],
+.carousel-indicators [data-bs-target] img {
+    text-indent: 0;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+
+.educat-div
+{
+    margin: auto;
+}
+.educat-div p
+{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.pro-card
+{
+    line-height: 1.8;
+}
+.pro-card a
+{
+    text-decoration: none;
+    color: white;
+        transition: .3s;
+
+}
+.pro-card a:hover
+{
+    color: var(--main-color);
+}
+.pro-card i{
+    color: white;
+    transition: .3s;
+}
+.pro-card a:hover i
+{
+    color: var(--main-color);
+}
+
+.fix-name
+{
+    width: 100px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+.form
+{
+    margin: auto;
+    width: 90%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(255, 255, 255, .4);
+    padding: 30px;
+}
+
+.form label
+{
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 25px;
+}
+.form input , textarea
+{
+    color: white;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5) ;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.form input:focus , textarea:focus
+{
+    border: 1px solid var(--main-color) ;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.form button
+{
+    width: 100%;
+}
+
+footer
+{
+    background-color: rgba(0, 0, 0, 0.548);
+}
+
+.fot-head
+{
+    font-size: 40px;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.fot-icon
+{
+    color: white;
+    font-size: 35px;
+    margin: 10px;
+    transition: .3s;
+}
+.footer-icons
+{
+    border-bottom: 1px solid gray;
+    width: 80%;
+    margin: auto;
+    
+}
+.fot-icon:hover
+{
+    color: var(--main-color);
+    transform: translateY(-3px);
+}
