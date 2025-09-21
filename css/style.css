@@ -68,13 +68,12 @@ header p {
     font-size: 25px;
 }
 
-.header a{
+.header a {
     color: var(--main-color);
     text-decoration: none;
 }
 
-header .main-btn:hover a
-{
+header .main-btn:hover a {
     color: white;
 }
 
@@ -203,15 +202,15 @@ header .main-btn:hover a
     position: relative;
     overflow: hidden;
 }
+
 .my-img:hover .my-social {
     transform: translatex(0);
 }
 
-.my-social
-{
+.my-social {
     background-color: rgba(255, 255, 255, .2);
     border: 1px solid rgba(255, 255, 255, .4);
-    border-radius: 50px;
+    border-radius: 15px;
     transition: .5s;
     width: 40px;
     text-align: center;
@@ -220,20 +219,19 @@ header .main-btn:hover a
     left: 5px;
     transform: translatex(-50px);
 }
-.my-social:hover
-{
+
+.my-social:hover {
     background-color: rgba(255, 255, 255, .3);
 }
 
-.my-social i
-{
+.my-social i {
     color: white;
     font-size: 25px;
     transition: .3s;
     margin: 7px 0;
 }
-.my-social i:hover
-{
+
+.my-social i:hover {
     color: var(--main-color);
     transform: translateY(-3px);
 }
@@ -260,49 +258,47 @@ header .main-btn:hover a
 }
 
 
-.educat-div
-{
+.educat-div {
     margin: auto;
 }
-.educat-div p
-{
+
+.educat-div p {
     font-size: 18px;
     line-height: 1.6;
 }
 
-.pro-card
-{
+.pro-card {
     line-height: 1.8;
 }
-.pro-card a
-{
+
+.pro-card a {
     text-decoration: none;
     color: white;
-        transition: .3s;
+    transition: .3s;
 
 }
-.pro-card a:hover
-{
+
+.pro-card a:hover {
     color: var(--main-color);
 }
-.pro-card i{
+
+.pro-card i {
     color: white;
     transition: .3s;
 }
-.pro-card a:hover i
-{
+
+.pro-card a:hover i {
     color: var(--main-color);
 }
 
-.fix-name
-{
+.fix-name {
     width: 100px;
     position: fixed;
     bottom: 5px;
     right: 5px;
 }
-.form
-{
+
+.form {
     margin: auto;
     width: 90%;
     border-radius: 20px;
@@ -311,77 +307,83 @@ header .main-btn:hover a
     padding: 30px;
 }
 
-.form label
-{
+.form label {
     color: var(--main-color);
     font-weight: bold;
     font-size: 25px;
 }
-.form input , textarea
-{
+
+.form input,
+textarea {
     color: white;
     padding: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.5) ;
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     outline: none;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.2);
 }
-.form input:focus , textarea:focus
-{
-    border: 1px solid var(--main-color) ;
+
+.form input:focus,
+textarea:focus {
+    border: 1px solid var(--main-color);
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.form button
-{
+.form button {
     width: 100%;
 }
 
-footer
-{
+footer {
     background-color: rgba(0, 0, 0, 0.548);
 }
 
-.fot-head
-{
+.fot-head {
     font-size: 40px;
     color: var(--main-color);
     text-align: center;
 }
 
-.fot-icon
-{
+.fot-icon {
     color: white;
     font-size: 35px;
     margin: 10px;
     transition: .3s;
 }
-.footer-icons
-{
+
+.footer-icons {
     border-bottom: 1px solid gray;
     width: 80%;
     margin: auto;
-    
+
 }
-.fot-icon:hover
-{
+
+.fot-icon:hover {
     color: var(--main-color);
     transform: translateY(-3px);
 }
-.sayed,.sec-head
-{
-      font-size: 50px;
-      font-weight: bold;
-      background: linear-gradient(220deg, #00c7e1, #f6f2f4, #00c7e1, #00c7e1, #f6f2f4);
-      background-size: 600% 600%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: gradientMove 10s ease infinite;
+
+.My-name,
+.sec-head {
+    font-size: 45px;
+    font-weight: bold;
+    background: linear-gradient(220deg,#f6f2f4, #00c7e1, #f6f2f4);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
     }
 
-    @keyframes gradientMove {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+    50% {
+        background-position: 100% 50%;
     }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
