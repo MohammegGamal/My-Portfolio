@@ -3,12 +3,35 @@
     --main-color: #00c7e1;
 }
 
+
+a,
+button {
+    cursor: none !important;
+
+}
+
+.cursor {
+    width: 18px;
+    height: 18px;
+    /* border: 2px solid var(--main-color); */
+    position: fixed;
+    border-radius: 50%;
+    background-color: rgb(0, 153, 255);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform .1s ease-out;
+    z-index: 9999;
+    box-shadow: 1px 1px 20px var(--main-color);
+}
+
 body {
     margin: 0;
     background-image: url(../images/hero.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    cursor: none !important;
+
 }
 
 .bg-main {
@@ -23,6 +46,29 @@ body {
 ::after,
 ::before {
     box-sizing: border-box;
+}
+
+/* تأثير السيليكشن */
+::selection {
+    background-color: #bdbdbd6e;
+    color: white;
+    text-shadow: 0 0 6px var(--main-color);
+}
+
+/* خدعة بسيطة لمحاكاة radius */
+p,
+h1,
+h2,
+h3,
+span,
+div {
+    -webkit-tap-highlight-color: transparent;
+    transition: background 0.3s ease;
+}
+
+::selection {
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
 }
 
 
@@ -269,6 +315,7 @@ header .main-btn:hover a {
 
 .pro-card {
     line-height: 1.8;
+    height: 100%;
 }
 
 .pro-card a {
@@ -367,7 +414,7 @@ footer {
 .sec-head {
     font-size: 45px;
     font-weight: bold;
-    background: linear-gradient(220deg,#f6f2f4, #00c7e1, #f6f2f4);
+    background: linear-gradient(220deg, #f6f2f4, #00c7e1, #f6f2f4);
     background-size: 600% 600%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
